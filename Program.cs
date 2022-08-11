@@ -6,16 +6,15 @@ while(true) {
 Console.WriteLine("Введите любое целое число от 1 до 7 включительно: ");
 string? str = Console.ReadLine();
 if(int.TryParse(str, out int number)) {
-    num = number;
-    if(num > 7 || num < 1) {
-        Console.WriteLine("Нет такого дня недели с числом " + num + "!");
+    if(number > 7 || number < 1) {
+        Console.WriteLine("Нет такого дня недели с числом " + number + "!");
     }
-    else if(num == 6 || num == 7) {
-        Console.WriteLine("Да, день недели под цифрой " + num + " является выходным!");
+    else if(number == 6 || number == 7) {
+        Console.WriteLine("Да, день недели под цифрой " + number + " является выходным!");
         break;
     }
     else {
-        Console.WriteLine("Нет, день недели под цифрой " + num + " НЕ является выходным!");
+        Console.WriteLine("Нет, день недели под цифрой " + number+ " НЕ является выходным!");
     break;
     }
 }
